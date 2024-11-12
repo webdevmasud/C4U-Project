@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C4U - Connecting talent to opportunity through skills </title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="font-display">
+  <!-- Navbar -->
+  <nav class="flex bg-white justify-between items-center p-3">
+    <a href="#">
+      <img src="/img/c4u full logo.png" alt="" class="object-cover">
+    </a>
+    <!-- Links -->
+     <div class="md:flex gap-10 hidden">
+      <a href="#" class="font-medium hover:text-regular">Home</a>
+      <a href="#" class="font-medium hover:text-regular">About Us</a>
+      <a href="#" class="font-medium hover:text-regular">Upskill</a>
+      <a href="#" class="font-medium hover:text-regular">Contact us </a>
+     </div>
+     <!-- Buttun -->
+     <button class="bg-regular p-3 rounded-lg  hidden md:block bg-[#F44335] md:text-base text-xs md:py-3 py-1 md:px-6 px-2 rounded-md text-white transition hover:scale-105 hover:translate-y-0.5">
+      Register Interest
+     </button>
+
+     <!-- 3 dot icon -->
+     <button class="p-2 md:hidden" onclick="handlemenu()"> <i class="fa-solid fa-bars text-gray-600"></i> 
+    </button>
+
+    <div id="nav-dialog" class=" bg-white inset-0 p-3 fixed z-10 md:hidden hidden">
+      <div id="nav-bar" class="flex justify-between">
+        <a href="#">
+          <img src="/img/c4u full logo.png" alt="" class="object-cover">
+        </a>
+
+        <button class="p-2 md:hidden" onclick="handlemenu()"> <i class="fa-solid fa-xmark"></i> 
+        </button>
+
+      </div>
+
+      <!-- Toggel Menu Links -->
+       <div class="mt-3">
+        <a href="#" class="font-medium m-3 p-3 hover:text-regular hover:bg-gray-50 block rounded-lg">Home</a>
+        <a href="#" class="font-medium m-3 p-3 hover:text-regular hover:bg-gray-50 block rounded-lg">About Us</a>
+        <a href="#" class="font-medium m-3 p-3 hover:text-regular hover:bg-gray-50 block rounded-lg">Upskill</a>
+        <a href="#" class="font-medium m-3 p-3 hover:text-regular hover:bg-gray-50 block rounded-lg">Contact us </a>
+       </div>
+       <hr class="border-gray-300">
+
+       <button class="flex gap-2 items-center px-6 mt-1 font-medium hover:text-regular hover:bg-gray-50 w-full py-5 rounded-lg">
+        Register Interest
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+       </button>
+    </div>
+  </nav>
+</body>
+<script src="script.js"></script>
+</html>
+
